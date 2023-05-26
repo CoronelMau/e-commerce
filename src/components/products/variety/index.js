@@ -33,18 +33,18 @@ color: #2A7AE4;
 `
 
 const ProductList = [
-  { id: 1, img: "./img/gameboy.png", name: "Gameboy", price: "$40.00", alt: "Gameboy" },
-  { id: 2, img: "./img/nes.png", name: "NES", price: "$75.00", alt: "Nintendo Entertainment System" },
-  { id: 3, img: "./img/ps5.png", name: "PlayStation5", price: "$400.00", alt: "PlayStation 5" },
-  { id: 4, img: "./img/switch-controllers.png", name: "Switch Controllers", price: "$80.00", alt: "Nintendo Switch Controllers" },
-  { id: 5, img: "./img/xbox.png", name: "X-Box series X", price: "$400.00", alt: "X-Box series X" },
-  { id: 6, img: "./img/xbox-controller.png", name: "X-Box Controller", price: "$75.00", alt: "X-Box Controller" },
+  { id: 1, img: "./img/atari-shirt.png", name: "Atari Shirt", price: "$20.00", alt: "Atari Shirt" },
+  { id: 2, img: "./img/clock.png", name: "Retro Clock", price: "$15.00", alt: "Retro Clock" },
+  { id: 3, img: "./img/nes-shirt.png", name: "NES Shirt", price: "$20.00", alt: "Nes Shirt" },
+  { id: 4, img: "./img/pikachu.png", name: "Pikachu Constume", price: "$120.00", alt: "Pikachu Constume" },
+  { id: 5, img: "./img/sonic.png", name: "Sonic Figure", price: "$40.00", alt: "Sonic Figure" },
+  { id: 6, img: "./img/vr.png", name: "VR", price: "$75.00", alt: "VR" },
 ]
 
-const Consoles = () => {
+const Variety = () => {
   return <div>
     <Title>
-      <h1>Consolas</h1>
+      <h1>Diversos</h1>
       <VerProducto>Ver todo <ArrowForwardIcon /></VerProducto>
     </Title>
     <Products>
@@ -60,4 +60,4 @@ const Consoles = () => {
   </div>
 }
 
-export default Consoles;
+export default Variety;

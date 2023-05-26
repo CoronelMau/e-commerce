@@ -33,12 +33,12 @@ color: #2A7AE4;
 `
 
 const ProductList = [
-  { id: 1, img: "./img/mug.png", name: "Mug", price: "$60.00" },
-  { id: 2, img: "./img/grogu.png", name: "Grogu", price: "$90.00" },
-  { id: 3, img: "./img/kylo.png", name: "Kylo Ren", price: "$40.00" },
-  { id: 4, img: "./img/lego-heads.png", name: "Lego Heads", price: "$60.00" },
-  { id: 5, img: "./img/stoorm.png", name: "Storm Tropper", price: "$70.00" },
-  { id: 6, img: "./img/yoda.png", name: "Yoda", price: "$75.00" },
+  { id: 1, img: "./img/mug.png", name: "Mug", price: "$60.00", alt: "Storm Trooper mug" },
+  { id: 2, img: "./img/grogu.png", name: "Grogu", price: "$90.00", alt: "Grogu Toy" },
+  { id: 3, img: "./img/kylo.png", name: "Kylo Ren", price: "$40.00", alt: "Kylo Ren Figure" },
+  { id: 4, img: "./img/lego-heads.png", name: "Lego Heads", price: "$60.00", alt: "Lego Heads" },
+  { id: 5, img: "./img/stoorm.png", name: "Storm Tropper", price: "$70.00", alt: "Storm Trooper Figure" },
+  { id: 6, img: "./img/yoda.png", name: "Yoda", price: "$75.00", alt: "Yoda Figure" },
 ]
 
 const StarWars = () => {
@@ -48,9 +48,9 @@ const StarWars = () => {
       <VerProducto>Ver todo <ArrowForwardIcon /></VerProducto>
     </Title>
     <Products>
-      {ProductList.map(({ id, name, img, price }) =>
+      {ProductList.map(({ id, name, img, price, alt }) =>
         <Card id={id}>
-          <img src={img} />
+          <img src={img} alt={alt} />
           <p>{name}</p>
           <Precio >{price}</Precio>
           <VerProducto>Ver producto</VerProducto>
