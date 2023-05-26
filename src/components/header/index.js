@@ -44,7 +44,7 @@ const Header = () => {
           <SearchIcon sx={{ color: 'action.active', mr: 1, my: 0.5 }} />
         </Items>
       </Search>
-      <Button variant="contained">Log In</Button>
+      <Button variant="contained" size="large">Log In</Button>
     </NavHeader >
 
     <Promo>
